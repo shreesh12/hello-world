@@ -1,0 +1,19 @@
+#script to find the factorial of a number
+
+# take input from the user
+n = as.integer(readline(prompt="Enter a number: "))
+
+#Initialize factorial as 1
+factorial = 1
+
+# check is the number is negative, positive or zero
+if(n < 0) {
+  print("Error! Factorial does not exist for negative numbers")
+  }else if(n == 0){
+    print("The factorial of 0 is 1")
+  }else{
+    for(i in 1:n) {
+      factorial = factorial * i
+  }
+  cat("The factorial of", n ,"is",factorial)
+  }
